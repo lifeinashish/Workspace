@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:paddingLeft="7dp"
+   android:paddingRight="7dp"
+   android:paddingTop="4dp"
+   android:descendantFocusability="beforeDescendants">
+   
+   <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+   
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       >
+   <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingLeft="7dp"
+      android:paddingTop="0dp"
+      android:paddingBottom="7dp"
+      android:paddingRight="7dp"
+      android:background="@drawable/selector_card_background"
+      android:layout_marginBottom="2dp"
+      android:descendantFocusability="afterDescendants">
+
+      <TextView
+          android:id="@+id/location"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:gravity="center"
+          android:text="@string/location"
+          android:textAppearance="?android:attr/textAppearanceLarge"
+          android:textColor="@color/base_blue" />
+
+    <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_distance"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/distance_value"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/expected_time"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_value"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingLeft="7dp"
+      android:paddingTop="4dp"
+      android:paddingBottom="7dp"
+      android:paddingRight="7dp"
+      android:layout_marginBottom="2dp"
+      android:background="@drawable/selector_card_background"
+      android:descendantFocusability="afterDescendants">
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center_vertical"
+            android:orientation="horizontal" >
+    
+     		<LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/meru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:paddingTop="0dp"
+                android:text="@string/meru"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+            <TextView
+        		android:id="@+id/meru_day_cost"
+       			android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/day_cost"
+        		android:layout_gravity="left|center"
+        		android:textAppearance="?android:attr/textAppearanceMedium" />
+            <TextView
+        		android:id="@+id/meru_night_cost"
+       			android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/night_cost"
+        		android:layout_gravity="left|center"
+        		android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+            </LinearLayout>
+            
+     		<View
+             android:layout_width="2dp"
+             android:layout_height="fill_parent"
+             android:background="#c0c0c0"
+             android:layout_marginRight="3dp"
+             android:layout_marginBottom="5dp"
+             android:layout_marginTop="5dp"/>
+            
+            <ImageView
+                android:id="@+id/meru_call"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center"
+                android:background="@drawable/button_effects"
+                android:clickable="true"
+                android:contentDescription="@string/to_button_string"
+                android:onClick="callButtonHandler"
+                android:padding="2dp"
+                android:src="@drawable/ic_call" />
+
+            </LinearLayout>
+            </LinearLayout>
+            
+    
+      <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingLeft="7dp"
+      android:paddingTop="4dp"
+      android:paddingBottom="7dp"
+      android:paddingRight="7dp"
+      android:background="@drawable/selector_card_background"
+      android:layout_marginBottom="2dp"
+      android:descendantFocusability="afterDescendants">
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center_vertical"
+            android:orientation="horizontal" >
+    
+     		<LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/ola"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:paddingTop="0dp"
+                android:text="@string/ola"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+            <TextView
+        		android:id="@+id/ola_sedan_cost"
+       			android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/ola_sedan_cost"
+        		android:layout_gravity="left|center"
+        		android:textAppearance="?android:attr/textAppearanceMedium" />
+            <TextView
+        		android:id="@+id/ola_mini_cost"
+       			android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/ola_mini_cost"
+        		android:layout_gravity="left|center"
+        		android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+            
+     		<View
+             android:layout_width="2dp"
+             android:layout_height="fill_parent"
+             android:background="#c0c0c0"
+             android:layout_marginRight="3dp"
+             android:layout_marginBottom="5dp"
+             android:layout_marginTop="5dp"/>
+            
+            <ImageView
+                android:id="@+id/ola_call"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center"
+                android:background="@drawable/button_effects"
+                android:clickable="true"
+                android:contentDescription="@string/to_button_string"
+                android:onClick="callButtonHandler"
+                android:padding="2dp"
+                android:src="@drawable/ic_call" />
+
+            </LinearLayout>
+            </LinearLayout>
+            
+      <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingLeft="7dp"
+      android:paddingTop="4dp"
+      android:paddingBottom="7dp"
+      android:paddingRight="7dp"
+      android:background="@drawable/selector_card_background"
+      android:layout_marginBottom="2dp"
+      android:descendantFocusability="afterDescendants">
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center_vertical"
+            android:orientation="horizontal" >
+    
+     		<LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/taxiforsure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:paddingTop="0dp"
+                android:text="@string/taxiforsure"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+            <TextView
+        		android:id="@+id/t4s_sedan_cost"
+       			android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/ola_sedan_cost"
+        		android:layout_gravity="left|center"
+        		android:textAppearance="?android:attr/textAppearanceMedium" />
+            <TextView
+        		android:id="@+id/t4s_mini_cost"
+       			android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/ola_mini_cost"
+        		android:layout_gravity="left|center"
+        		android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+            
+     		<View
+             android:layout_width="2dp"
+             android:layout_height="fill_parent"
+             android:background="#c0c0c0"
+             android:layout_marginRight="3dp"
+             android:layout_marginBottom="5dp"
+             android:layout_marginTop="5dp"/>
+            
+            <ImageView
+                android:id="@+id/t4s_call"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center"
+                android:background="@drawable/button_effects"
+                android:clickable="true"
+                android:contentDescription="@string/to_button_string"
+                android:onClick="callButtonHandler"
+                android:padding="2dp"
+                android:src="@drawable/ic_call" />
+
+            </LinearLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/easy_cab_layout"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingLeft="7dp"
+      android:paddingTop="4dp"
+      android:paddingBottom="7dp"
+      android:paddingRight="7dp"
+      android:background="@drawable/selector_card_background"
+      android:layout_marginBottom="2dp"
+      android:descendantFocusability="afterDescendants"
+      android:visibility="gone">
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center_vertical"
+            android:orientation="horizontal" >
+    
+     		<LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/easycabs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:paddingTop="0dp"
+                android:text="@string/easycabs"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+            <TextView
+        		android:id="@+id/easy_day_cost"
+       			android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/day_cost"
+        		android:layout_gravity="left|center"
+        		android:textAppearance="?android:attr/textAppearanceMedium" />
+            <TextView
+        		android:id="@+id/easy_night_cost"
+       			android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/night_cost"
+        		android:layout_gravity="left|center"
+        		android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+            
+     		<View
+             android:layout_width="2dp"
+             android:layout_height="fill_parent"
+             android:background="#c0c0c0"
+             android:layout_marginRight="3dp"
+             android:layout_marginBottom="5dp"
+             android:layout_marginTop="5dp"/>
+            
+            <ImageView
+                android:id="@+id/easy_call"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center"
+                android:background="@drawable/button_effects"
+                android:clickable="true"
+                android:contentDescription="@string/to_button_string"
+                android:onClick="callButtonHandler"
+                android:padding="2dp"
+                android:src="@drawable/ic_call" />
+
+            </LinearLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingLeft="7dp"
+      android:paddingTop="4dp"
+      android:paddingBottom="7dp"
+      android:paddingRight="7dp"
+      android:background="@drawable/selector_card_background"
+      android:layout_marginBottom="2dp"
+      android:descendantFocusability="afterDescendants">
+            <TextView
+       			android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/base_note"
+        		android:layout_gravity="left|center"
+        		android:textAppearance="?android:attr/textAppearanceMedium" />
+          </LinearLayout>
+</LinearLayout>
+</ScrollView>
+</FrameLayout>

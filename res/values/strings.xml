@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Match n\' Move</string>
+    <string name="action_share_app_string">Share</string>
+    <string name="about_app">About App</string>
+    <string name="to_button_string">To</string>
+    <string name="from_button_string">Current Location</string>
+    <string name="next_button_string">Next</string>
+    <string name="search_hint">Search</string>
+    <string name="set_location">Set Location</string>
+    <string name="meru">Meru</string>
+    <string name="ola">Ola</string>
+    <string name="taxiforsure">Taxi For Sure</string>
+    <string name="easycabs">EasyCabs</string>
+    <string name="total_distance">"Total Distance:  "</string>
+    <string name="distance_value">" 0 KMS"</string>
+    <string name="expected_time">Expected Time:</string>
+    <string name="time_value">"   0 Minutes"</string>
+    <string name="logo">First page logo</string>
+    <string name="app_id">933486683347224</string>
+    <string name="skip_login"><u>Skip Login</u></string>
+    <string name="day_cost">Day Cost:</string>
+    <string name="night_cost">Night Cost:</string>
+    <string name="ola_sedan_cost">Sedan Cost:</string>
+    <string name="ola_mini_cost">Mini Cost:</string>
+    <string name="location">Location</string>
+    <string name="base_note">Note: Above costs don\'t include service tax and waiting charges.</string>
+    <string name="about_us">
+        <p>Match n\' Move is an individual\'s effort to help users compare different taxis by bringing the distributed taxi industry together.</p>
+    </string>
+    <string name="about_us_bottom">
+        <p>As a developer of non-profit app this is my firm belief that technology is to make user\'s life easier and not to overcomplicate things.</p>
+    </string>
+</resources>
